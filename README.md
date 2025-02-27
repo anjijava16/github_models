@@ -58,7 +58,7 @@ pip install azure-ai-inference
 
 This sample demonstrates a basic call to the chat completion API. It is leveraging the GitHub AI model inference endpoint and your GitHub token. The call is synchronous.
 
-``
+```
 import os
 from azure.ai.inference import ChatCompletionsClient
 from azure.ai.inference.models import SystemMessage, UserMessage
@@ -85,7 +85,7 @@ response = client.complete(
 
 print(response.choices[0].message.content)
 
-``
+```
 
 ## 4. Explore more samples
 
@@ -93,7 +93,7 @@ Run a multi-turn conversation
 
 This sample demonstrates a multi-turn conversation with the chat completion API. When using the model for a chat application, you'll need to manage the history of that conversation and send the latest messages to the model.
 
-``
+```
 import os
 from azure.ai.inference import ChatCompletionsClient
 from azure.ai.inference.models import AssistantMessage, SystemMessage, UserMessage
@@ -118,13 +118,13 @@ response = client.complete(messages=messages, model=model_name)
 
 print(response.choices[0].message.content)
 
-``
+```
 
 ## Stream the output
 
 For a better user experience, you will want to stream the response of the model so that the first token shows up early and you avoid waiting for long responses.
 
-``
+```
 
 import os
 from azure.ai.inference import ChatCompletionsClient
@@ -164,7 +164,7 @@ if usage:
 
 client.close()
 
-``
+```
 
 ## 5. Going beyond rate limits
 
