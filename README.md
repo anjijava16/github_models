@@ -166,6 +166,7 @@ client.close()
 
 ```
 
+
 ## 5. Going beyond rate limits
 
 The rate limits for the playground and free API usage are intended to help you experiment with models and prototype your AI application. For use beyond those limits, and to bring your application to scale, you must provision resources from an Azure account, and authenticate from there instead of your GitHub personal access token. You don't need to change anything else in your code. Use this link to discover how to go beyond the free tier limits in Azure AI.
